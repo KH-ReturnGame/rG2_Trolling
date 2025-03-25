@@ -12,6 +12,6 @@ public class block : MonoBehaviour
 
     void Update()
     {
-        //asdf
+        
     }
 }
