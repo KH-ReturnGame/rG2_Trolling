@@ -12,6 +12,9 @@ public class block : MonoBehaviour
 
     void Update()
     {
-        
-    }
+        if (!switched)
+        {
+            Destroy(this);
+        }
+    } 
 }
