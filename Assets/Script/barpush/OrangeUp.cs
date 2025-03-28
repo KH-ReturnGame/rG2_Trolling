@@ -15,6 +15,16 @@ public class OrangeUp : MonoBehaviour
 
     void Update()
     {
+        TC = GameObject.Find("timechecker");
+        movement = TC.GetComponent<TimeChecker>().move;
+        if (movement)
+        {
+            movedir = -1;
+        }
+        else
+        {
+            movedir = 1;
+        }
         if (Input.GetKeyDown(KeyCode.W))
         {
             this.transform.position += new Vector3(0, 0.2f * movedir, 0);
