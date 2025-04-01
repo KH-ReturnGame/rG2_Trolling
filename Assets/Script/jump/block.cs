@@ -6,15 +6,16 @@ public class block : MonoBehaviour
     public GameObject x;
     void Awake()
     {
-        x = GameObject.Find("switch");
-        switched = x.GetComponent<Switch>().switched;
+        x = GameObject.Find("Switch");
+        
     }
 
     void Update()
     {
+        switched = x.GetComponent<Switch>().switched;
         if (!switched)
         {
-            Destroy(this);
+            Destroy(gameObject, 0f);
         }
     } 
 }
