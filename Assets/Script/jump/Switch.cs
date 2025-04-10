@@ -13,10 +13,11 @@ public class Switch : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Orange") || other.gameObject.layer == 8)
         {
             switched = !switched;
-            if(switched)
-            {
-                Bridge();
-            }
+        }
+
+        if (switched)
+        {
+            Bridge();
         }
     }
 
