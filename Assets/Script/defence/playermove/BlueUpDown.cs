@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OrangeUpDown : MonoBehaviour
+public class BlueUpDown : MonoBehaviour
 {
     Rigidbody2D rigid;
     public GameObject Bullet;
@@ -12,26 +12,26 @@ public class OrangeUpDown : MonoBehaviour
 
     void Update()
     {
-       
+
     }
 
     void FixedUpdate()
     {
         move();
-        
+
     }
 
     void move()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             this.transform.position += new Vector3(0, 0.1f, 0);
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.DownArrow))
         {
             this.transform.position += new Vector3(0, -0.1f, 0);
         }
-        if (Input.GetKey(KeyCode.D) && canshot)
+        if (Input.GetKey(KeyCode.LeftArrow) && canshot)
         {
             attack();
         }

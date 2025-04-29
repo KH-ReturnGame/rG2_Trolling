@@ -29,4 +29,17 @@ public class enemy : MonoBehaviour
     {
         this.transform.position += new Vector3(0, movedir*0.02f, 0);
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (color == 1)
+        {
+            
+        }
+
+        else if (color == 2)
+        {
+
+        }
+    }
 }

@@ -562,6 +562,7 @@ GameObject:
   - component: {fileID: 568870866}
   - component: {fileID: 568870865}
   - component: {fileID: 568870864}
+  - component: {fileID: 568870868}
   m_Layer: 8
   m_Name: Blue
   m_TagString: Untagged
@@ -584,7 +585,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -712,6 +713,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &568870868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568870863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726a8ce6e1e30fa49be9260ad0c508db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 632737947420738702, guid: 433f6aedbf7a8e746bd5b554857c5e6c, type: 3}
+  canshot: 1
 --- !u!1 &818348798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,9 +1036,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1495839739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3ae1db796c42646bc6a51dbb2e1333, type: 3}
+  m_Script: {fileID: 11500000, guid: dc6169cbad7006e44a0c7909a1e98876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bullet: {fileID: 632737947420738702, guid: 010ac35e11692ae48a896d02fb878a18, type: 3}
+  canshot: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
