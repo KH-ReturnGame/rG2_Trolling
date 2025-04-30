@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class OrangeUpDown : MonoBehaviour
 {
@@ -34,6 +35,8 @@ public class OrangeUpDown : MonoBehaviour
         if (Input.GetKey(KeyCode.D) && canshot)
         {
             attack();
+            canshot = false;
+            StartCoroutine(Waiting());
         }
 
     }
@@ -42,5 +45,11 @@ public class OrangeUpDown : MonoBehaviour
     {
         Instantiate(Bullet, this.transform.position, Quaternion.identity);
 
+    }
+
+    IEnumerator Waiting()
+    {
+        yield return new WaitForSeconds(0.5f);
+        canshot = true;
     }
 }

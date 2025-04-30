@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -5593553398735337629}
   - component: {fileID: 560375442850307943}
   - component: {fileID: -3702806376974154581}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OrangeBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
