@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class enemy : MonoBehaviour
 {
@@ -54,9 +55,20 @@ public class enemy : MonoBehaviour
             Debug.Log("fucker");
         }
 
-        if (other.gameObject.layer == 9)
+        if (color == 1 && other.gameObject.layer == 9)
         {
-            Debug.Log("lose");
+            Debug.Log("orange lose");
+            PlayerPrefs.SetInt("o3", 0);
+            PlayerPrefs.SetInt("b3", 1);
+            SceneManager.LoadScene("jump");
+            Destroy(gameObject);
+        }
+        else if(color == 2 && other.gameObject.layer == 9)
+        {
+            Debug.Log("blue lose");
+            PlayerPrefs.SetInt("o3", 1);
+            PlayerPrefs.SetInt("b3", 0);
+            SceneManager.LoadScene("jump");
             Destroy(gameObject);
         }
     }

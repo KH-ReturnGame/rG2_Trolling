@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BlueUpDown : MonoBehaviour
 {
@@ -51,5 +52,15 @@ public class BlueUpDown : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         canshot = true;
+    }
+    void OnTriggerEnter2D(Collider2D something)
+    {
+        if (something.gameObject.layer == 7)
+        {
+            Debug.Log("blue dead");
+            PlayerPrefs.SetInt("o3", 1);
+            PlayerPrefs.SetInt("b3", 0);
+            SceneManager.LoadScene("jump");
+        }
     }
 }

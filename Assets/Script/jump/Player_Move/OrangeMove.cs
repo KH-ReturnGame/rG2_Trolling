@@ -58,4 +58,11 @@ public class OrangeMove : MonoBehaviour
             canjump = false;
         }
     }
+    void OnTriggerEnter2D(Collider2D something)
+    {
+        if (something.gameObject.layer == 9)
+        {
+            Debug.Log("orange dead");
+        }
+    }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class OrangeUpDown : MonoBehaviour
 {
@@ -51,5 +52,16 @@ public class OrangeUpDown : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         canshot = true;
+    }
+
+    void OnTriggerEnter2D(Collider2D something)
+    {
+        if (something.gameObject.layer == 8)
+        {
+            Debug.Log("orange dead");
+            PlayerPrefs.SetInt("o3", 0);
+            PlayerPrefs.SetInt("b3", 1);
+            SceneManager.LoadScene("jump");
+        }
     }
 }

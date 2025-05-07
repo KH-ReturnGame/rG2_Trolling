@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class bomb : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnTriggerEnter2D(Collider2D something)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (something.gameObject.layer == 8)
+        {
+            Debug.Log("blue dead");
+        }
+        else if (something.gameObject.layer == 7)
+        {
+            Debug.Log("orange dead");
+        }
     }
 }
