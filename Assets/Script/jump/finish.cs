@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class finish : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class finish : MonoBehaviour
         if (something.gameObject.layer == 8 || something.gameObject.layer == 7)
         {
             Debug.Log("finish");
+            SceneManager.LoadScene("tank");
+
         }
     }
 }

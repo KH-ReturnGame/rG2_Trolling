@@ -8,5 +8,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jump.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Canon.unity
+    guid: 6649f57a672e5fa4ebdbc9a1a966a6d5
+  - enabled: 1
+    path: Assets/Scenes/Defence.unity
+    guid: 7b4536e014f531d48ace221d0d2c369a
+  - enabled: 1
+    path: Assets/Scenes/Tank.unity
+    guid: 4a7fb2b96bfe12141ab09200b8eb88d9
+  - enabled: 1
+    path: Assets/Scenes/BarPush.unity
+    guid: 3f87798a23d9ed449b555b53ae792e01
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

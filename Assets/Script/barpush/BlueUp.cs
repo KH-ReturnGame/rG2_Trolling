@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BlueUp : MonoBehaviour
 {
@@ -29,5 +30,6 @@ public class BlueUp : MonoBehaviour
         {
             this.transform.position += new Vector3(0, 0.2f * movedir, 0);
         }
+        
     }
 }
