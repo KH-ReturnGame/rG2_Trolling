@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class OrangeTopMove : MonoBehaviour
 {
-    Rigidbody2D rigid;
+    //Rigidbody2D rigid;
     Quaternion quaternion = Quaternion.identity;
 
     void Awake()
     {
-        rigid = GetComponent<Rigidbody2D>();
+       // rigid = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()

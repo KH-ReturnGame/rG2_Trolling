@@ -37,7 +37,6 @@ public class BlueMove : MonoBehaviour
 
     void move()
     {
-
         Vector3 MoveVelocity = Vector3.zero;
         if (Input.GetKey(KeyCode.LeftArrow))
         {
