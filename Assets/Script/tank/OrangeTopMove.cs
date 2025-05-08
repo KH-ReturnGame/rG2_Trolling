@@ -4,6 +4,8 @@ public class OrangeTopMove : MonoBehaviour
 {
     //Rigidbody2D rigid;
     Quaternion quaternion = Quaternion.identity;
+    public Quaternion rotation;
+    public GameObject bullet;
 
     void Awake()
     {
@@ -34,7 +36,8 @@ public class OrangeTopMove : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-
+            rotation = transform.rotation;
+            Instantiate(bullet, transform.position, Quaternion.identity);
         }
     }
 }

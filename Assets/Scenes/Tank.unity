@@ -2383,7 +2383,7 @@ GameObject:
   - component: {fileID: 151477837}
   - component: {fileID: 151477836}
   - component: {fileID: 151477838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3447,8 +3447,8 @@ GameObject:
   - component: {fileID: 356331440}
   - component: {fileID: 356331441}
   - component: {fileID: 356331443}
-  m_Layer: 0
-  m_Name: Triangle
+  m_Layer: 7
+  m_Name: Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3536,6 +3536,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b3edfbb10583344839e09d6834253b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+  bullet: {fileID: 1688878241043426485, guid: 62258c5a30a69f44a821eea19571926c, type: 3}
 --- !u!1 &1076638650
 GameObject:
   m_ObjectHideFlags: 0
