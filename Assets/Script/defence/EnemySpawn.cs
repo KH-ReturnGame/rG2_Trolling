@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class EnemySpawn : MonoBehaviour
 {
     public GameObject enemy;
-    float location = 1;
     void Awake()
     {
         StartCoroutine(waiting());

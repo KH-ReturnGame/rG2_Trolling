@@ -2,10 +2,6 @@ using UnityEngine;
 
 public class OrangeTopMove : MonoBehaviour
 {
-    Vector3 dir = new Vector3(0, 0, 1);
-
-    float rotationInput = 0;
-    float rotatSpeed = 10;
     Rigidbody2D rigid;
     Quaternion quaternion = Quaternion.identity;
 
