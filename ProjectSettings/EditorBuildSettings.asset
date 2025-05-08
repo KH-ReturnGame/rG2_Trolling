@@ -20,5 +20,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BarPush.unity
     guid: 3f87798a23d9ed449b555b53ae792e01
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: a9385548018ea554c83e25d5810ea261
+  - enabled: 1
+    path: Assets/Scenes/FirstScene.unity
+    guid: eca033845745219439507b2aad00e126
+  - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: 75e25bc4a99f3574d800387a69c9a0bb
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
