@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bluecanon_0: -282424616607145762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

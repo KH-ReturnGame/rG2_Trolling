@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class BlueBottomMove : MonoBehaviour
 {
@@ -38,12 +37,5 @@ public class BlueBottomMove : MonoBehaviour
             virvel = Vector3.down;
         }
         transform.position += horvel * movespeed * Time.deltaTime + virvel * movespeed * Time.deltaTime;
-    }
-    void OnTriggerEnter2D(Collider2D other){
-        if(other.gameObject.layer == 9){
-            PlayerPrefs.SetInt("o5", 1);
-            PlayerPrefs.SetInt("b5", 0);
-            SceneManager.LoadScene("finalscene");
-        }
     }
 }

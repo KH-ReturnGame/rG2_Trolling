@@ -7,7 +7,7 @@ public class PushFinish : MonoBehaviour
         if(other.gameObject.layer == 9){
             PlayerPrefs.SetInt("o1", 1);
             PlayerPrefs.SetInt("b1", 1);
-            SceneManager.LoadScene("puzzle");
+            SceneManager.LoadScene("canon");
         }
     }
 }
